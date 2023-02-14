@@ -1,0 +1,45 @@
+.nav-holder {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+nav {
+    width: 980px;
+    height: 90px;
+    // background-color: green;
+    margin: 0 auto;
+    border-bottom: 2px solid $white;
+    display: flex;
+    align-items: center;
+    font-family: $GS;
+    .logo {
+        color: $white;
+        font-size: 20px;
+    }
+    .link-holder {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        // background-color: purple;
+    .links {
+        max-width: 550px;
+        // background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        a {
+            padding-right: 21.5px;
+            padding-left: 21.5px;
+            color: $white;
+            text-decoration: none;
+            font-size: 15px;
+            border-right: 1px solid $blue;
+            &:last-child {
+                border-right: none;
+                padding-right: 0px;
+            }
+        }
+    }
+    }
+}
+}

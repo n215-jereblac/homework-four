@@ -1,0 +1,32 @@
+footer {
+    background-color: $blue;
+    font-family: $GS;
+    width: 100%;
+    color: $white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    .footer {
+        margin: 0 auto;
+        height: 100%;
+        width: 980px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+        .socials {
+            display: flex;
+            justify-content: space-evenly;
+            // background-color: green;
+            width: 120px;
+            font-size: 20px;
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}
