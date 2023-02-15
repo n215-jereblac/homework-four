@@ -116,12 +116,12 @@
                     justify-content: space-between;
                     flex-wrap: wrap;
                     .left {
-                        width: 344px;
+                        width: 42%;
                         height: $input-height;
                         padding: 20px;
                     }
                     .right {
-                        width: 453px;
+                        width: 55%;
                         height: $input-height;
                         padding: 20px;
                     }
@@ -135,7 +135,7 @@
                         margin-right: 41px;
                     }
                     .date-input {
-                        width: 698px;
+                        width: 85%;
                         padding: 20px;
                     }
                     .icon {
@@ -195,3 +195,12 @@
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour-03.jpg);
 }
 
+@media (max-width: 860px) 
+{ .home .tours-home 
+    { flex-direction: column; 
+      align-items: center; 
+    } 
+    .home .tours-home .tour-card { 
+        margin-bottom: 20px; 
+    } 
+}

@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 .nav-holder nav {
-  width: 980px;
+  max-width: 980px;
   height: 90px;
   margin: 0 auto;
   border-bottom: 2px solid #FFF;
@@ -60,7 +60,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav-holder nav .logo {
   color: #FFF;
-  font-size: 20px;
 }
 .nav-holder nav .link-holder {
   display: flex;
@@ -86,6 +85,36 @@ h1, h2, h3, h4, h5, h6, p {
   padding-right: 0px;
 }
 
+.logo-img {
+  background-image: url(../images/logo-white.png);
+}
+
+@media (max-width: 990px) {
+  .nav-holder {
+    left: 13px;
+    width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .nav-holder nav .link-holder .links a {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-holder nav .logo img {
+    width: 80px;
+  }
+}
+@media (max-width: 450px) {
+  .nav-holder nav .link-holder .links a {
+    font-size: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nav-holder nav .logo img {
+    width: 60px;
+  }
+}
 .home .hero {
   width: 100%;
   height: 500px;
@@ -202,12 +231,12 @@ h1, h2, h3, h4, h5, h6, p {
   flex-wrap: wrap;
 }
 .home .home-page .form-wrap .form .form-info .left {
-  width: 344px;
+  width: 42%;
   height: 58px;
   padding: 20px;
 }
 .home .home-page .form-wrap .form .form-info .right {
-  width: 453px;
+  width: 55%;
   height: 58px;
   padding: 20px;
 }
@@ -221,7 +250,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 41px;
 }
 .home .home-page .form-wrap .form .single-line .date-input {
-  width: 698px;
+  width: 85%;
   padding: 20px;
 }
 .home .home-page .form-wrap .form .single-line .icon {
@@ -275,6 +304,15 @@ h1, h2, h3, h4, h5, h6, p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
 }
 
+@media (max-width: 860px) {
+  .home .tours-home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home .tours-home .tour-card {
+    margin-bottom: 20px;
+  }
+}
 footer {
   background-color: #79ADDC;
   font-family: "Gill Sans";

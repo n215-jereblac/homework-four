@@ -4,7 +4,7 @@
     z-index: 5;
     width: 100%;
 nav {
-    width: 980px;
+    max-width: 980px;
     height: 90px;
     // background-color: green;
     margin: 0 auto;
@@ -14,7 +14,6 @@ nav {
     font-family: $GS;
     .logo {
         color: $white;
-        font-size: 20px;
     }
     .link-holder {
         display: flex;
@@ -43,3 +42,37 @@ nav {
     }
 }
 }
+
+.logo-img {
+    background-image: url(../images/logo-white.png);
+}
+
+@media (max-width: 990px) {
+    .nav-holder {
+        left: 13px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+.nav-holder nav .link-holder .links a {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-holder nav .logo img {
+    width: 80px;
+}
+}
+
+@media (max-width: 450px) {
+.nav-holder nav .link-holder .links a {
+    font-size: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-holder nav .logo img {
+    width: 60px;
+}
+}
+
