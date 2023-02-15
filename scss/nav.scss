@@ -47,14 +47,14 @@ nav {
     background-image: url(../images/logo-white.png);
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
     .nav-holder {
         left: 13px;
         width: 95%;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
 .nav-holder nav .link-holder .links a {
     font-size: 12px;
     padding-left: 15px;
