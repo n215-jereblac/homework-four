@@ -7,15 +7,17 @@ footer {
     display: flex;
     align-items: center;
     .footer {
+        // background-color: green;
         margin: 0 auto;
         height: 100%;
-        width: 980px;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         p {
             font-size: 12px;
             text-align: center;
+            margin: 0 auto;
         }
         .socials {
             display: flex;
@@ -28,5 +30,53 @@ footer {
                 color: $white;
             }
         }
+    }
+}
+
+@media (max-width: 1200px) {
+    footer .footer {
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    footer .footer p {
+        font-size: 8px;
+    }
+    footer .footer img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    footer .footer p {
+        font-size: 8px;
+    }
+    footer .footer img {
+        width: 80px;
+    }
+    footer .footer .socials {
+        width: 100px;
+    }
+    footer .footer .socials a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    footer .footer img {
+        width: 60px;
+    }
+    footer .footer .socials {
+        width: 90px;
+    }
+    footer .footer .socials a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    footer .footer p {
+        font-size: 7px;
     }
 }
