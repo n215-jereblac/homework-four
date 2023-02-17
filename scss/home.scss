@@ -96,6 +96,7 @@
         .form-wrap {
             margin: 50px auto 0 auto;
             max-width: 818px;
+            // background-color: green;
             h1 {
                 font-family: $NovaC;
                 font-size: 60px;
@@ -103,6 +104,7 @@
             .form {
                 font-family: $GS-Light;
                 font-size: 18px;
+                // background-color: green;
                 input {
                     border: solid $blue 2px;
                     height: $input-height;
@@ -193,6 +195,22 @@
 
 .aussie-tour {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour-03.jpg);
+}
+
+@media (max-width: 1200px) {
+    .form-wrap h1 {
+    text-align: center;
+    }
+    .form-wrap .form {
+    width: 95%;
+    margin: 0 auto;
+    }
+    .form-wrap .form .single-line .date-input {
+        min-width: 100%;
+    }
+    .form-wrap .form .submit {
+        padding-bottom: 80px;
+    }
 }
 
 @media (max-width: 860px) 

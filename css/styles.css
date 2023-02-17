@@ -324,6 +324,21 @@ h1, h2, h3, h4, h5, h6, p {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
 }
 
+@media (max-width: 1200px) {
+  .form-wrap h1 {
+    text-align: center;
+  }
+  .form-wrap .form {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .form-wrap .form .single-line .date-input {
+    min-width: 100%;
+  }
+  .form-wrap .form .submit {
+    padding-bottom: 80px;
+  }
+}
 @media (max-width: 860px) {
   .home .tours-home {
     flex-direction: column;
