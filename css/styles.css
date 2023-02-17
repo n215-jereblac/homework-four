@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6, p {
 .site-wrapper {
   max-width: 1280px;
   min-height: 500px;
+  background-color: #FFF;
   margin: 0 auto;
   position: relative;
 }
@@ -120,7 +121,7 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 90%;
   }
   .nav-holder nav .link-holder .links a {
-    font-size: 8px;
+    font-size: 10px;
     padding-left: 11px;
     padding-right: 11px;
   }
@@ -130,7 +131,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media (max-width: 380px) {
   .nav-holder nav .link-holder .links a {
-    font-size: 7px;
+    font-size: 8.5px;
     padding-left: 7px;
     padding-right: 7px;
   }
@@ -287,7 +288,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .home .home-page .form-wrap .form .family-input select {
   height: 58px;
-  width: 103px;
+  width: 11%;
   padding: 15px;
   border: solid #79ADDC 2px;
   font-family: "Gill Sans Light";
@@ -329,11 +330,12 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
   }
   .form-wrap .form {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
   .form-wrap .form .single-line .date-input {
     min-width: 100%;
+    margin-top: 5px;
   }
   .form-wrap .form .submit {
     padding-bottom: 80px;
@@ -346,6 +348,33 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .home .tours-home .tour-card {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 620px) {
+  .form-wrap .form .family-input select {
+    width: 65px !important;
+  }
+}
+@media (max-width: 566px) {
+  .form-wrap .form .family-input {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .home .hero .callout-holder .callout p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .form-wrap .form .family-input select {
+    width: 47px !important;
+    padding: 5px !important;
+  }
+}
+@media (max-width: 340px) {
+  .home .hero .callout-holder .callout p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 footer {
@@ -382,8 +411,16 @@ footer .footer .socials a {
 }
 
 @media (max-width: 1200px) {
+  footer {
+    margin-top: 53px;
+  }
   footer .footer {
     width: 95%;
+  }
+}
+@media (max-width: 860px) {
+  footer {
+    margin-top: 113px;
   }
 }
 @media (max-width: 500px) {
